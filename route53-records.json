@@ -1,0 +1,82 @@
+{
+    "ResourceRecordSets": [
+        {
+            "Name": "dev.kisndev.com.",
+            "Type": "A",
+            "AliasTarget": {
+                "HostedZoneId": "ZP97RAFLXTNZK",
+                "DNSName": "dualstack.a370cb1b388794194aab87f7b30289c6-2143531473.ap-south-1.elb.amazonaws.com.",
+                "EvaluateTargetHealth": true
+            }
+        },
+        {
+            "Name": "dev.kisndev.com.",
+            "Type": "NS",
+            "TTL": 172800,
+            "ResourceRecords": [
+                {
+                    "Value": "ns-1246.awsdns-27.org."
+                },
+                {
+                    "Value": "ns-2035.awsdns-62.co.uk."
+                },
+                {
+                    "Value": "ns-69.awsdns-08.com."
+                },
+                {
+                    "Value": "ns-765.awsdns-31.net."
+                }
+            ]
+        },
+        {
+            "Name": "dev.kisndev.com.",
+            "Type": "SOA",
+            "TTL": 900,
+            "ResourceRecords": [
+                {
+                    "Value": "ns-1246.awsdns-27.org. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 86400"
+                }
+            ]
+        },
+        {
+            "Name": "api.dev.kisndev.com.",
+            "Type": "A",
+            "TTL": 60,
+            "ResourceRecords": [
+                {
+                    "Value": "3.108.193.173"
+                }
+            ]
+        },
+        {
+            "Name": "api.internal.dev.kisndev.com.",
+            "Type": "A",
+            "TTL": 60,
+            "ResourceRecords": [
+                {
+                    "Value": "172.20.53.243"
+                }
+            ]
+        },
+        {
+            "Name": "kops-controller.internal.dev.kisndev.com.",
+            "Type": "A",
+            "TTL": 60,
+            "ResourceRecords": [
+                {
+                    "Value": "172.20.53.243"
+                }
+            ]
+        },
+        {
+            "Name": "www.dev.kisndev.com.",
+            "Type": "CNAME",
+            "TTL": 300,
+            "ResourceRecords": [
+                {
+                    "Value": "dev.kisndev.com"
+                }
+            ]
+        }
+    ]
+}
